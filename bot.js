@@ -1,10 +1,4 @@
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Zezo || -help`,"http://twitch.tv/S-F")
-console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-console.log('         [Wait please .. ]       ')
-console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-client.on('ready', () => {
     console.log('')
     console.log('')
     console.log('')
@@ -27,11 +21,6 @@ client.on('ready', () => {
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 });
-// البكجات //
-// npm i fs //
-// npm i moment //
-// npm install discord.js --save //
-
 let points = JSON.parse(fs.readFileSync('points.json', 'utf8'));
 client.on('message', message => {
     if (!points[message.author.id]) points[message.author.id] = {points : 0}
